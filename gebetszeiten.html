@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gebetszeiten</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+          <nav>
+            <ul>
+              <li><a href="index.html">Start</a></li>
+              <li><a href="gebetszeiten.html">Gebetszeiten</a></li>
+              <li><a href="#">Veranstaltungen</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+          <div class="language-selector">
+            <span id="current-lang">DE</span>
+            <div class="lang-dropdown">
+              <a href="#" onclick="setLanguage('de')">Deutsch</a>
+              <a href="#" onclick="setLanguage('al')">Shqip</a>
+            </div>
+          </div>
+        </div>
+      </header>
+  <section class="gebetszeiten-section">
+    <h1>Gebetszeiten Neu-Ulm</h1>
+    <p id="heute-datum"></p>
+
+    <div class="zeiten-grid">
+      <div class="zeit-box"><span>Fajr</span><strong id="fajr">--:--</strong></div>
+      <div class="zeit-box"><span>Sonnenaufgang</span><strong id="sunrise">--:--</strong></div>
+      <div class="zeit-box"><span>Dhuhr</span><strong id="dhuhr">--:--</strong></div>
+      <div class="zeit-box"><span>Asr</span><strong id="asr">--:--</strong></div>
+      <div class="zeit-box"><span>Maghrib</span><strong id="maghrib">--:--</strong></div>
+      <div class="zeit-box"><span>Isha</span><strong id="isha">--:--</strong></div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-content">
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5657.625506846522!2d10.02204097663149!3d48.39078807127257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479966e30dba7d4f%3A0x3a7a79dda3579b90!2siaz%20ulm!5e1!3m2!1sde!2sde!4v1744993586669!5m2!1sde!2sde"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+  
+        <a href="https://www.facebook.com/profile.php?id=100069065304408&locale=de_DE" class="facebook-slide" target="_blank">
+          <img src="assets/facebook.png" alt="Facebook" />
+        </a>
+      </div>
+      <p class="footer-note">© 2025 Islamisches Zentrum Ulm</p>
+    </div>
+  </footer>
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
