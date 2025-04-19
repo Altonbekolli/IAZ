@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Islam Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/spenden.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+          <nav>
+            <ul>
+              <li><a href="index.html">Start</a></li>
+              <li><a href="gebetszeiten.html">Gebetszeiten</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+          <div class="language-selector">
+            <span id="current-lang">DE</span>
+            <div class="lang-dropdown">
+              <a href="#" onclick="setLanguage('de')">Deutsch</a>
+              <a href="#" onclick="setLanguage('al')">Shqip</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="spenden-hero">
+        <h1>Spenden im Islam</h1>
+      
+        <div class="hadith-slider">
+          <p id="hadith-text"></p>
+          <div class="slider-controls">
+            <button id="prev-btn">← Zurück</button>
+            <button id="next-btn">Weiter →</button>
+          </div>
+        </div>
+      
+        <div class="spenden-container">
+          <div class="spenden-card">
+            <h3><i class="fa-solid fa-hand-holding-heart"></i> Unterstütze unsere Moschee</h3>
+            <p>Jeder Euro zählt – vielen Dank für deine Großzügigkeit! 🤍</p>
+        
+            <div class="iban-box">
+              <label>IBAN:</label>
+              <strong>DE12 3456 7890 1234 5678 00</strong>
+            </div>
+        
+            <!-- PayPal Spenden-Button -->
+            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+              <input type="hidden" name="business" value="DEINE_PAYPAL_EMAIL@adresse.com" />
+              <input type="hidden" name="currency_code" value="EUR" />
+              <button type="submit" class="paypal-btn">
+                <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal" />
+                Jetzt mit PayPal spenden
+              </button>
+            </form>
+          </div>
+        </div>
+        
+      </section>
+      
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5657.625506846522!2d10.02204097663149!3d48.39078807127257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479966e30dba7d4f%3A0x3a7a79dda3579b90!2siaz%20ulm!5e1!3m2!1sde!2sde!4v1744993586669!5m2!1sde!2sde"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+  
+        <a href="https://www.facebook.com/profile.php?id=100069065304408&locale=de_DE" class="facebook-slide" target="_blank">
+          <img src="assets/facebook.png" alt="Facebook" />
+        </a>
+      </div>
+      <p class="footer-note">© 2025 Islamisches Zentrum Ulm</p>
+    </div>
+  </footer>
+  <script src="js/spenden.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
