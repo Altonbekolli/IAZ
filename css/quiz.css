@@ -1,0 +1,140 @@
+.quiz-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem;
+    color: white;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    text-align: center;
+  }
+  
+  .quiz-wrapper h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtext {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+  }
+  
+  .level-selector button {
+    background-color: #135ea8;
+    color: white;
+    border: none;
+    margin: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .level-selector button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+  
+  .quiz-box {
+    margin-top: 2rem;
+  }
+  
+  .question {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .answers button {
+    display: block;
+    margin: 0.5rem auto;
+    padding: 0.8rem 1rem;
+    background: white;
+    color: #222;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 90%;
+    max-width: 400px;
+    font-size: 1rem;
+  }
+  
+  .answers button:hover {
+    background-color: #eee;
+  }
+  
+  .correct {
+    background-color: #4caf50 !important;
+    color: white;
+  }
+  .wrong {
+    background-color: #e53935 !important;
+    color: white;
+  }
+  
+  .explanation {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #222;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    color: #cfcfcf;
+    display: none;
+  }
+  
+  #next-btn {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #0077cc;
+    color: white;
+    font-size: 1rem;
+    display: none;
+    cursor: pointer;
+  }
+
+  .progress-container {
+    margin-bottom: 1.5rem;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 18px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #4caf50;
+    transition: width 0.4s ease;
+  }
+  
+  .progress-label {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+
+  .restart-btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #0077cc;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .restart-btn:hover {
+    background-color: #005fa3;
+    transform: translateY(-2px);
+  }
+  
+  
